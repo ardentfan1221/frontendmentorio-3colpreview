@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedan .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    background-color: red;
+    
+    overflow:hidden;
+}
+
+.car {
+    padding: 50px 65px;
+}
+
+.car img {
+    margin-bottom: 20px;
+}
+
+.car h1 {
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+}
+
+.car p {
+    font-family: 'Lexend Deca';
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 80px;
+    line-height: 30px;
+}
+
+.btn {
+    font-family: 'Lexend Deca';
+    border-radius: 35px;
+    padding: 0.75rem 1.5rem;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+@media(max-width: 375px) {
+    .container {
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .car {
+        padding: 60px 45px 50px 45px;
+    }
+
+    .car p {
+        margin-bottom: 30px;
+    }
+}
